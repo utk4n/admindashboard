@@ -1,0 +1,116 @@
+.sidebar {
+  flex: 1;
+  border-right: 0.5px solid rgb(223, 223, 223);
+  background-color: white;
+  border-bottom-right-radius: 10px;
+  overflow: hidden;
+
+  .top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      font-size: 20px;
+      font-weight: bold;
+      color: #6439ff;
+    }
+  }
+  hr {
+    border: 0.5px solid rgb(223, 223, 223);
+  }
+
+  .center {
+    padding-left: 10px;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        margin-top: 10px;
+        cursor: pointer;
+        &:hover {
+          background-color: #ece8ff;
+        }
+        .arrow {
+          margin-left: auto;
+        }
+        .icon {
+          font-size: 18px;
+          color: #7451f8;
+        }
+        span {
+          font-size: 13px;
+          font-weight: 600;
+          color: #888;
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    .colorOpt {
+      width: 25px;
+      height: 25px;
+      border-radius: 5px;
+      margin: 5px;
+      border: 1px solid #7451f8;
+      cursor: pointer;
+      &:nth-child(1) {
+        background-color: whitesmoke;
+      }
+      &:nth-child(2) {
+        background-color: rgb(39, 39, 39);
+      }
+    }
+  }
+  .login_section{
+display: flex;
+align-items: flex-end;
+height: 35vh;
+
+  .who_login {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+    padding: 5px;
+    background-color: #ece8ff;
+    .login_wrapper {
+      display: flex;
+      align-items: center;
+      padding: 4px;
+
+      .login_infos {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 5px;
+        p {
+          font-size: clamp(12px, 15px, 18px);
+        }
+        span {
+          font-size: 13px;
+          color: rgb(167, 167, 167);
+          font-weight: 600;
+          align-self: flex-start;
+        }
+      }
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+    }}
+  }
+}
